@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=PT+Sans+Narrow:wght@400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+
+body {
+    background: #f7f9f8;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainHeader{
+    background: #fff;
+    border-bottom: 2px solid #ebedec;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding-right: 3rem;
+}
+
+.profileIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+.profilePicture {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+.ak {
+    background-color: #98959e;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.profilePicture > img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.chat {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.chat > i {
+    font-size: 1.2rem;
+}
+
+.redDot {
+    background-color: #dd515c;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
+.buttonWhite {
+    color: #2a62e9;
+    border: 1px solid #2a62e9;
+    background: none;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    width: 90px;
+}
+
+.buttonWhite:hover {
+    background: #2a62e9;
+    color: white;
+}
+
+.buttonBlue {
+    color: white;
+    border: 1px solid #2a62e9;
+    background: #2a62e9;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    width: 90px;
+}
+
+.headerLeft {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.buttonBlue:hover {
+    opacity: 0.8;
+}
+
+.backButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    border-right: 2px solid #ebedec;
+}
+
+.backButton > i {
+    color: #7e7e7e;
+    font-size: 1.5rem;
+}
+
+.backButton:hover {
+    background-color: #7e7e7e;
+    opacity: 0.5;
+}
+
+.backButton:hover i {
+    color: white;
+}
+
+.breadcrumbs {
+    padding-left: 1rem;
+    color: #7e7e7e;
+    font-weight: 500;
+}
+
+.infoSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 3rem auto 2rem auto;
+}
+
+.infoSection > h1 {
+    font-size: 2rem;
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.calendar p {
+    font-weight: 600;
+}
+
+.iconBoxes {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.iconBox {
+    background: white;
+    width: calc(100% / 4);
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 5px;
+    padding: 2rem 3rem;
+    gap: 1.5rem;
+}
+
+.boxIcon > i {
+    font-size: 3rem;
+    color: #2a62e9;
+}
+
+.boxTitle {
+    color: #868a89;
+    font-weight: 500;
+}
+.boxValue {
+    font-size: 2rem;
+}
+
+.boxPtc {
+    color:  #2a6f5c;
+    font-weight: 600;
+}
+
+.graphsOne {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.graphElement {
+    margin-top: 1.5rem;
+    padding: 2rem 3rem;
+    width: calc(100% / 2);
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.circleBlue {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #2a62e9;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+
+.graphTitle {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.graphText {
+    color: #989a99;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.barOuter {
+
+    width: calc(100% - 20px);
+    height: 20px;
+    background: #f3f5f4;
+}
+
+.barBottom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timePassed > .barBottom > i {
+    background-color: #158d67;
+    color: white;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.timePassed > .barBottom > .barOuter > .barInner {
+    width: 100%;
+    background: #158d67;
+    height: 100%;
+}
+
+.barTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2.3rem;
+}
+
+.barTitle {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.barValue {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #848a8a;
+}
+
+.impressions >.barBottom > .barOuter > .barInner {
+    width: 82%;
+    background: #2a62e9;
+    height: 100%;
+}
+
+.barBottom > i {
+    background-color: #f3f5f4;
+    color: white;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.clicks >.barBottom > .barOuter > .barInner {
+    width: 90%;
+    background: #2a62e9;
+    height: 100%;
+}
+
+
+.amountSpent >.barBottom > .barOuter > .barInner {
+    width: 70%;
+    background: #2a62e9;
+    height: 100%;
+}
+
+.graphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.graphContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4%;
+}
+
+.titleRow {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    padding: 1rem 0;
+    border-bottom: 2px solid #2a62e9;
+}
+
+.titleRow > div{
+    width: 125px;
+    
+}
+
+.campaignRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    padding: 1rem 0;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.campaignRow > div{
+    width: 125px;
+}
+
+.campaignRow > div:first-of-type {
+    font-weight: bold;
+}
+
+.graphInfo {
+    display: flex;
+    gap: 1rem;
+}
+
+.circleLightBlue {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #ecf0fc;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+
+.circleBlueEmpty {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    border: 2px solid #2a62e9;
+}
+
+.graphTittle {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
